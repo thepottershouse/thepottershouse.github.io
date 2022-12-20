@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1934,7 +1928,7 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 45em;
+			width: 80em;
 			max-width: calc(100% - 4em);
 			margin: 0 auto;
 		}
@@ -2021,6 +2015,7 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
 				justify-content: flex-end;
+				text-align: center;
 			}
 
 			.main.style2.inactive.left > .content {
@@ -2039,7 +2034,6 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
 		}
 
 			.main.style3 .content > header {
@@ -2096,6 +2090,8 @@ input, select, textarea {
 				width: 50%;
 			}
 
+
+
 		}
 
 		@media screen and (max-width: 1000px) {
@@ -2148,7 +2144,10 @@ input, select, textarea {
 
 			.main.style3 {
 				text-align: center;
-				padding: 3em 10px 3em 10px;
+			}
+			
+			.content {
+				width: 100%;
 			}
 
 		}
@@ -2255,24 +2254,52 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
+	#scripture {
+		text-align: right;
+		vertical-align: text-bottom;
+	}
+
 /* One */
 
 	#one {
 		background: url("images/overlay.png"), url("../../images/workShop");
-		background-size: 1536px 1024px;
+		background-size: 256px 256px, 80% 100%;
 		background-attachment: fixed, fixed;
-		background-position: center left;
+		background-position: top left, center left;
 		background-repeat: repeat, no-repeat;
+	}
+
+	@media screen and (max-width: 1000px) {
+
+		#one {
+			background-size: 256px 256px, cover;
+			background-position: center, center;
+		}
+		
 	}
 
 /* Two */
 
 	#two {
 		background: url("images/overlay.png"), url("../../images/theBradacs.jpg");
-		background-size: 1536px 1024px;
+		background-size: 256px 256px, 80% 100%;
 		background-attachment: fixed, fixed;
-		background-position: center right;
+		background-position: top right, center right;
 		background-repeat: repeat, no-repeat;
+	}
+
+	@media screen and (max-width: 1000px) {
+
+		#two {
+			background-size: 256px 256px, cover;
+			background-position: center, center;
+		}
+		
+	}
+
+
+	.sectionTwo {
+		text-align: center;
 	}
 
 /* Contact */
@@ -2315,4 +2342,43 @@ input, select, textarea {
 				padding: 1em 1em 2em 1em;
 			}
 
+			.friends {
+				display: flex;
+				flex-direction: column; 
+			}
+
+		}
+
+		.partners .title {
+			text-align: center;
+		}
+
+		.googleMaps {
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+
+		.partners p, h2 {
+			text-align: center;
+		}
+
+		.gives {
+			text-align: center;
+			background-color: rgb(147, 178, 188);
+			color:#000000;
+		}
+
+		.givesText {
+			text-align: center;
+			color:#000000;
+		}
+
+		.givesHR {
+			border: 1px solid rgb(0, 0, 0);
+		}
+
+		.friends {
+			display: flex;
+			justify-content: space-evenly;
 		}
