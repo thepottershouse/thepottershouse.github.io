@@ -1,4 +1,4 @@
-As a Full-Stack Developer, I was tasked with creating a custom static business website for a client. I leveraged my knowledge of HTML, CSS, JavaScript and SCSS to deliver a visually appealing solution that met the client's specific requirements.
+As a Web Developer, I was tasked with creating a custom static business website for a client. I leveraged my knowledge of HTML, CSS, JavaScript and SCSS to deliver a visually appealing solution that met the client's specific requirements.
 
 The client requested a dramatic fade-in landing page with specific language and parameters, as well as four distinct sections to showcase their product, business background, family background, and local partners with links and Google Maps integration.
 
